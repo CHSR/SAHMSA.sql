@@ -1,0 +1,14 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[spGetInterviewbyPK]
+
+(@InterviewPK int)
+AS
+SET NOCOUNT ON;
+
+SELECT * 
+FROM Interview
+WHERE InterviewPK = @InterviewPK
+GO
