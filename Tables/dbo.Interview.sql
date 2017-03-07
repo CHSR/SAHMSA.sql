@@ -2,8 +2,8 @@ CREATE TABLE [dbo].[Interview]
 (
 [InterviewPK] [int] NOT NULL IDENTITY(1, 1),
 [MainFK] [int] NOT NULL,
-[Interval] [int] NOT NULL,
-[InterviewType] [nchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[Interval] [int] NULL,
+[InterviewType] [nchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
 [InterviewDate] [date] NOT NULL
 ) ON [PRIMARY]
 GO

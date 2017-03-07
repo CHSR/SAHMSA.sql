@@ -4,7 +4,7 @@ SET ANSI_NULLS ON
 GO
 CREATE PROCEDURE [dbo].[spAddInterview](@MainFK int=NULL,
 @Interval int=NULL,
-@InterviewType nchar(10)=NULL,
+@InterviewType nchar(20)=NULL,
 @InterviewDate date=NULL)
 AS
 INSERT INTO Interview(

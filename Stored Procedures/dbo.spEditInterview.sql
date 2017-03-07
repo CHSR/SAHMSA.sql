@@ -5,7 +5,7 @@ GO
 CREATE PROCEDURE [dbo].[spEditInterview](@InterviewPK int=NULL,
 @MainFK int=NULL,
 @Interval int=NULL,
-@InterviewType nchar(10)=NULL,
+@InterviewType nchar(20)=NULL,
 @InterviewDate date=NULL)
 AS
 UPDATE Interview
