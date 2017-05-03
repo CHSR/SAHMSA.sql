@@ -17,7 +17,8 @@ BEGIN
 	SET NOCOUNT ON;
 
     -- Insert statements for procedure here
-	SELECT YouthID FROM dbo.Main
+	SELECT YouthID,
+	MainPK FROM dbo.Main
 	ORDER BY YouthID
 END
 GO
