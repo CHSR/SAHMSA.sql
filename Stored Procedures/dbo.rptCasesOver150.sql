@@ -34,6 +34,7 @@ BEGIN
 	GROUP BY mainfk) a ON a.MainFK = MainPK
 	INNER JOIN dbo.Program ON Program.ProgramPK = Main.ProgramFK
 	INNER JOIN dbo.SplitString(@programfk,',') ON main.ProgramFK  = listitem
+	WHERE a.DaysOld > 149
 
 
 END
